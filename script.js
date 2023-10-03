@@ -64,4 +64,13 @@ const books = [
   },
 ];
 
+function filterByGenre(books, genre) {
+  return books.filter(book => book.genre.toLowerCase() === genre.toLowerCase());
+}
+
+// Example usage:
+const mysteryBooks = filterByGenre(books, "mystery");
+console.log(mysteryBooks);
+
+
 
